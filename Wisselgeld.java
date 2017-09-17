@@ -98,19 +98,16 @@ public class Wisselgeld {
         }else{
             System.out.println("20 cent: 0");
         }
-        value1 = change/10;
+        value1 = (change+2)/10;
         if(value1>=1){
             System.out.print("10 cent: ");
             System.out.println(value1);
-            change = change - value1 * 10;
+            change = change-1 - value1 * 10;
         } else {
             System.out.println("10 cent: 0");
         }
         value1 = change;
-        if(value1>=8){
-            System.out.print("5 cent: 2");
-        }
-         else if (value1>=3){
+        if (value1>=3 && value1<=7){
             System.out.print("5 cent: 1");
         } else{
             System.out.print("5 cent: 0");
