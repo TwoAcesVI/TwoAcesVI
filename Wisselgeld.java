@@ -102,7 +102,7 @@ public class Wisselgeld {
         if(value1>=1){
             System.out.print("10 cent: ");
             System.out.println(value1);
-            change = change-1 - value1 * 10;
+            change = change- 2 - value1 * 10;
         } else {
             System.out.println("10 cent: 0");
         }
